@@ -4,3 +4,17 @@
 *.jar
 *.war
 *.ear
+
+#FitNesse stuff
+!fitnesse-standalone.jar
+FitNesse/FitNesseRoot/files
+FitNesse/FitNesseRoot/FrontPage
+FitNesse/FitNesseRoot/PageHeader
+FitNesse/FitNesseRoot/updateDoNotCopyOverList
+FitNesse/FitNesseRoot/FitNesse
+FitNesse/FitNesseRoot/PageFooter
+FitNesse/FitNesseRoot/properties
+FitNesse/FitNesseRoot/updateList
+FitNesse/FitNesseRoot/ErrorLogs
+FitNesse/FitNesseRoot/RecentChanges
+

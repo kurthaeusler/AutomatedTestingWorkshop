@@ -1,0 +1,2 @@
+|script:calculator|
+|check|display should be|0.|

@@ -1,0 +1,5 @@
+!*< Hidden
+!path fitnesse-standalone.jar
+!define TEST_SYSTEM {slim}
+*!
+!contents -R2 -g -p -f -h
