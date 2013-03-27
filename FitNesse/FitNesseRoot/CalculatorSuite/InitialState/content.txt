@@ -1,2 +1,5 @@
-|script:calculator|
+!|import|
+|com.kurt.atw|
+
+!|script|Calculator|
 |check|display should be|0.|
