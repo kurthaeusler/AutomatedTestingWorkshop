@@ -1,4 +1,4 @@
-package com.kurt.atw.atdd.automation;
+package com.kurt.atw.fixtures;
 
 import com.kurt.atw.Button;
 import com.kurt.atw.Calculator;

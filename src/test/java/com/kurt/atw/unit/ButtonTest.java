@@ -1,8 +1,23 @@
-package com.kurt.atw;
+package com.kurt.atw.unit;
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
+
+import com.kurt.atw.Button;
+import com.kurt.atw.ButtonEight;
+import com.kurt.atw.ButtonEquals;
+import com.kurt.atw.ButtonFive;
+import com.kurt.atw.ButtonFour;
+import com.kurt.atw.ButtonNine;
+import com.kurt.atw.ButtonOne;
+import com.kurt.atw.ButtonPlus;
+import com.kurt.atw.ButtonSeven;
+import com.kurt.atw.ButtonSix;
+import com.kurt.atw.ButtonThree;
+import com.kurt.atw.ButtonTwo;
+import com.kurt.atw.ButtonZero;
+import com.kurt.atw.NoSuchButtonException;
 
 public class ButtonTest {
 

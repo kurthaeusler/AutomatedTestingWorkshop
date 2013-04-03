@@ -1,5 +1,6 @@
 !define TEST_SYSTEM {slim}
 !path fitnesse-standalone.jar
+!path ../target/test-classes
 !path ../target/classes
 
 !contents -R2 -g -p -f -h
