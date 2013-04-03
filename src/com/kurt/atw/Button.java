@@ -1,5 +1,7 @@
 package com.kurt.atw;
 
+import java.util.Stack;
+
 public abstract class Button {
 	
 	public static Button create(String buttonPush) throws NoSuchButtonException
@@ -26,11 +28,22 @@ public abstract class Button {
 			return new ButtonNine();
 		case "0":
 			return new ButtonZero();
+		case "+":
+			return new ButtonPlus();
+		case "=":
+			return new ButtonEquals();
 		default:
 				throw new NoSuchButtonException();
 		}
 	}
 
-	public abstract String displayValue();
+	public abstract boolean isOperand();
 
+	public abstract String displayValue() throws InvalidOperationException, NotImplementedException;
+
+	public void doSomething(Stack<Button> stack) throws NotImplementedException
+	{
+		return;
+	}
+	
 }

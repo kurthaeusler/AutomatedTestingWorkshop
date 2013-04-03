@@ -1,5 +1,5 @@
 !|import|
-|com.kurt.atw|
+|com.kurt.atw.atdd.automation|
 
-!|script|Calculator|
+!|script|CalculatorFixture|
 |check|display should be|0.|

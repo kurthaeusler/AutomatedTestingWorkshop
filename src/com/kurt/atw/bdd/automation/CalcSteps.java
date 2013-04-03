@@ -7,7 +7,9 @@ import org.jbehave.core.annotations.When;
 
 import com.kurt.atw.Button;
 import com.kurt.atw.Calculator;
+import com.kurt.atw.InvalidOperationException;
 import com.kurt.atw.NoSuchButtonException;
+import com.kurt.atw.NotImplementedException;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.CoreMatchers.equalTo;
@@ -36,7 +38,7 @@ public class CalcSteps {
 	}
 
 	@When("a <button push> occurs")
-	public void whenAbuttonPushOccurs(@Named("button push") String buttonPush) throws NoSuchButtonException {
+	public void whenAbuttonPushOccurs(@Named("button push") String buttonPush) throws NoSuchButtonException, InvalidOperationException, NotImplementedException {
 	  _calculator.push(Button.create(buttonPush));
 	}
 	
