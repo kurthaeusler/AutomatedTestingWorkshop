@@ -21,3 +21,5 @@ FitNesse/FitNesseRoot/RecentChanges
 bin/
 
 FitNesse/FitNesseRoot/*zip
+
+target/
