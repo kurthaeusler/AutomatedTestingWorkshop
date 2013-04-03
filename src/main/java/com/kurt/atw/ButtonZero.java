@@ -1,9 +1,8 @@
 package com.kurt.atw;
 
 public class ButtonZero extends Operand {
-	
-	public ButtonZero()
-	{
+
+	public ButtonZero() {
 		super(0);
 	}
 }

@@ -3,11 +3,9 @@ package com.kurt.atw;
 import java.util.Stack;
 
 public abstract class Button {
-	
-	public static Button create(String buttonPush) throws NoSuchButtonException
-	{
-		switch(buttonPush)
-		{
+
+	public static Button create(String buttonPush) throws NoSuchButtonException {
+		switch (buttonPush) {
 		case "1":
 			return new ButtonOne();
 		case "2":
@@ -33,17 +31,17 @@ public abstract class Button {
 		case "=":
 			return new ButtonEquals();
 		default:
-				throw new NoSuchButtonException();
+			throw new NoSuchButtonException();
 		}
 	}
 
 	public abstract boolean isOperand();
 
-	public abstract String displayValue() throws InvalidOperationException, NotImplementedException;
+	public abstract String displayValue() throws InvalidOperationException,
+			NotImplementedException;
 
-	public void doSomething(Stack<Button> stack) throws NotImplementedException
-	{
+	public void doSomething(Stack<Button> stack) throws NotImplementedException {
 		return;
 	}
-	
+
 }

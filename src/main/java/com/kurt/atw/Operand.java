@@ -1,7 +1,7 @@
 package com.kurt.atw;
 
 public class Operand extends Button {
-	
+
 	private int _value;
 
 	public Operand(int i) {
@@ -18,10 +18,9 @@ public class Operand extends Button {
 		return true;
 	}
 
-	public int value(){
+	public int value() {
 
 		return _value;
 	}
-	
 
 }

@@ -1,9 +1,8 @@
 package com.kurt.atw;
 
 public class ButtonFour extends Operand {
-	
-	public ButtonFour()
-	{
+
+	public ButtonFour() {
 		super(4);
 	}
 }

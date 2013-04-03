@@ -16,30 +16,32 @@ import static org.hamcrest.CoreMatchers.equalTo;
 
 public class CalcSteps {
 	private Calculator _calculator;
-	
+
 	@Given("that the calulator exists")
 	public void givenThatTheCalulatorExists() {
-	  _calculator = new Calculator();
+		_calculator = new Calculator();
 	}
 
 	@When("the calculator is turned on")
 	public void whenTheCalculatorIsTurnedOn() {
-	  _calculator.turnOn();
+		_calculator.turnOn();
 	}
-	
+
 	@Then("the display should read $display")
 	public void thenTheDisplayShouldRead(@Named("display") String display) {
 		assertThat(_calculator.displayShouldBe(), equalTo(display));
 	}
-	
+
 	@Given("that the calculator is reset")
 	public void givenThatTheCalculatorIsReset() {
-	  _calculator.reset();
+		_calculator.reset();
 	}
 
 	@When("a <button push> occurs")
-	public void whenAbuttonPushOccurs(@Named("button push") String buttonPush) throws NoSuchButtonException, InvalidOperationException, NotImplementedException {
-	  _calculator.push(Button.create(buttonPush));
+	public void whenAbuttonPushOccurs(@Named("button push") String buttonPush)
+			throws NoSuchButtonException, InvalidOperationException,
+			NotImplementedException {
+		_calculator.push(Button.create(buttonPush));
 	}
-	
+
 }

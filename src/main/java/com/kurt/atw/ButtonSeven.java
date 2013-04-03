@@ -1,9 +1,8 @@
 package com.kurt.atw;
 
 public class ButtonSeven extends Operand {
-	
-	public ButtonSeven()
-	{
+
+	public ButtonSeven() {
 		super(7);
 	}
 }

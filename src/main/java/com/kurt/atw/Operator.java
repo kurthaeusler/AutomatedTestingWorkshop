@@ -12,8 +12,9 @@ public abstract class Operator extends Button {
 		return false;
 	}
 
-	public Operand apply(Operand firstOperand, Operand secondOperand) throws NotImplementedException {
+	public Operand apply(Operand firstOperand, Operand secondOperand)
+			throws NotImplementedException {
 		throw new NotImplementedException();
 	}
-	
+
 }

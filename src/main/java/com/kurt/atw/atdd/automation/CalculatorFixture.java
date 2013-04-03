@@ -18,7 +18,8 @@ public class CalculatorFixture {
 		return _calculator.displayShouldBe();
 	}
 
-	public void push(String button) throws NoSuchButtonException, InvalidOperationException, NotImplementedException {
+	public void push(String button) throws NoSuchButtonException,
+			InvalidOperationException, NotImplementedException {
 		_calculator.push(Button.create(button));
 	}
 
