@@ -1,1 +1,13 @@
-!contents -R2 -g -p -f -h
+!|import|
+|com.kurt.atw|
+
+!|script|Calculator|
+|check|display should be|0.|
+|push|7|
+|check|display should be|7.|
+|push|+|
+|check|display should be|7.|
+|push|5|
+|check|display should be|5.|
+|push|=|
+|check|display should be|12.|

@@ -5,4 +5,8 @@ public class Calculator {
 	{
 		return "0.";
 	}
+	public void push(Button button)
+	{
+		
+	}
 }
