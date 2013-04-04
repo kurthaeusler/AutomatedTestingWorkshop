@@ -109,10 +109,10 @@ Examples:
 ```xml
 <dependency>
   	<groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>LATEST</version>
-      <scope>test</scope>
-	  </dependency>
+    <artifactId>junit</artifactId>
+    <version>LATEST</version>
+    <scope>test</scope>
+</dependency>
 ```
 2. The TDD cycle is called "Red, Green, Refactor". This means we write a failing test, make it pass, then refactor.
 3. For the Red step, create a unit test file `CalculatorTest.java` in `src/test/java`. It could contain the following:
