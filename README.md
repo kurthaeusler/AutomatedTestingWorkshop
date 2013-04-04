@@ -36,7 +36,6 @@ A simple calculator developed with ATDD / BDD and TDD.
 !|import|
 |com.kurt.atw.fixtures|
 ```
-
 ```
 !|script|CalculatorFixture|
 |check|display should be|0.|
