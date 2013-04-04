@@ -44,6 +44,7 @@ A simple calculator developed with ATDD / BDD and TDD.
 
 7. Click test – it should fail. FitNesse also created `FitNesseRoot/ErrorLogs` and `FitNesseRoot/RecentChanges` we probably don’t need them in source control
 8. Now create a Java project in the existing directory (Lets make it a Maven project, it simplifies installing JBehave later, but for FitNesse it doesn’t matter). Create a new class (in `src/test/java`) like:
+
 ```java
 package com.kurt.atw.fixtures;
 
