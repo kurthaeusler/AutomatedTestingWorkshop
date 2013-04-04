@@ -59,7 +59,7 @@ public class CalculatorFixture {
 ## Setting up JBehave ##
 
 1. Create a specification file (call it `basic_display.story`) in `src/test/resources/com/kurt/atw/bdd/specification/` containing:
-```
+```Cucumber
 Feature: A story is a collection of scenarios
 
 Narrative:
