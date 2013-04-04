@@ -98,3 +98,44 @@ Examples:
 		<version>LATEST</version>
 </dependency>
 ```
+5. To compile it, we will also need a `CalcSteps.java file`. For now just create a blank one so the project compiles.
+6. Right click on the `CalcStory.java` file and run it as a JUnit test.
+7. Now we can start to fill in the steps in `CalcSteps.java` to satisfy JBehave. This is where we also begin to write production code with TDD.
+
+## Setting up JUnit ##
+
+1. We can install JUnit with the following POM snippet:
+
+```xml
+<dependency>
+  	<groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>LATEST</version>
+      <scope>test</scope>
+	  </dependency>
+```
+2. The TDD cycle is called "Red, Green, Refactor". This means we write a failing test, make it pass, then refactor.
+3. For the Red step, create a unit test file `CalculatorTest.java` in `src/test/java`. It could contain the following:
+
+```java
+package com.kurt.atw.unit;
+
+import static org.junit.Assert.*;
+import org.junit.Test;
+import com.kurt.atw.Calculator;
+
+public class CalculatorTest {
+
+	@Test
+	public void testInitialDisplay() {
+		Calculator calculator = new Calculator();
+
+		assertEquals("0.", calculator.displayShouldBe());
+	}
+}
+```
+4. Now make the test compile, but not run successfully.
+5. Now make the test green.
+6. Now refactor.
+7. Now run the ATDD and BDD tests again, and use TDD to get them further towards successful completion.
+
