@@ -5,10 +5,10 @@ import java.util.Stack;
 public class Calculator {
 
 	private String _display;
-	private Stack<Button> _stack;
+	private Stack<StackItem> _stack;
 
 	public Calculator() {
-		_stack = new Stack<Button>();
+		_stack = new Stack<StackItem>();
 		turnOn();
 	}
 
@@ -16,11 +16,11 @@ public class Calculator {
 		return _display;
 	}
 
-	public void push(Button button) throws InvalidOperationException,
+	public void push(StackItem button) throws InvalidOperationException,
 			NotImplementedException {
 		_stack.push(button);
 		button.doSomething(_stack);
-		if (_stack.peek().isOperand())
+		if (_stack.peek() instanceof Operand)
 			_display = _stack.peek().displayValue() + ".";
 	}
 

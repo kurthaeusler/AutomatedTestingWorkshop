@@ -1,10 +1,9 @@
 package com.kurt.atw.fixtures;
 
-import com.kurt.atw.Button;
 import com.kurt.atw.Calculator;
 import com.kurt.atw.InvalidOperationException;
-import com.kurt.atw.NoSuchButtonException;
 import com.kurt.atw.NotImplementedException;
+import com.kurt.atw.StackItem;
 
 public class CalculatorFixture {
 
@@ -18,9 +17,9 @@ public class CalculatorFixture {
 		return _calculator.displayShouldBe();
 	}
 
-	public void push(String button) throws NoSuchButtonException,
-			InvalidOperationException, NotImplementedException {
-		_calculator.push(Button.create(button));
+	public void push(String button) throws InvalidOperationException,
+			NotImplementedException {
+		_calculator.push(StackItem.create(button));
 	}
 
 }

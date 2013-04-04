@@ -2,11 +2,12 @@ package com.kurt.atw;
 
 import java.util.Stack;
 
-public class ButtonEquals extends Operator {
+public class Equals extends Operator {
 
 	@Override
-	public void doSomething(Stack<Button> stack) throws NotImplementedException {
-		Operator thisEqualsButton = (ButtonEquals) stack.pop();
+	public void doSomething(Stack<StackItem> stack)
+			throws NotImplementedException {
+		Operator thisEqualsButton = (Equals) stack.pop();
 		assert (this == thisEqualsButton);
 		Operand secondOperand = (Operand) stack.pop();
 		Operator operator = (Operator) stack.pop();

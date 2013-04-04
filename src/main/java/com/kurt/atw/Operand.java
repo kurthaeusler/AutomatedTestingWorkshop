@@ -1,6 +1,6 @@
 package com.kurt.atw;
 
-public class Operand extends Button {
+public class Operand extends StackItem {
 
 	private int _value;
 
@@ -8,14 +8,9 @@ public class Operand extends Button {
 		_value = i;
 	}
 
-	public String displayValue() throws NotImplementedException {
+	public String displayValue() {
 
 		return Integer.toString(_value);
-	}
-
-	@Override
-	public boolean isOperand() {
-		return true;
 	}
 
 	public int value() {

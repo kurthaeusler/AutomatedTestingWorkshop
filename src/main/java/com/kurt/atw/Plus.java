@@ -1,6 +1,6 @@
 package com.kurt.atw;
 
-public class ButtonPlus extends Operator {
+public class Plus extends Operator {
 
 	@Override
 	public Operand apply(Operand firstOperand, Operand secondOperand)

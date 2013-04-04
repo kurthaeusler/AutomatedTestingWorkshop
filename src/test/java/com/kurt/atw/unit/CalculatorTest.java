@@ -11,7 +11,7 @@ public class CalculatorTest {
 	@Test
 	public void testDisplay() {
 		Calculator calculator = new Calculator();
-		
+
 		assertEquals("0.", calculator.displayShouldBe());
 	}
 
