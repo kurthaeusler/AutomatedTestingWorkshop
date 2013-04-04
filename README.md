@@ -86,3 +86,14 @@ Examples:
 |5|5.|
 |9|9.|
 ```
+2. The next file we need is the story runner. This can be done for a single story, or a collection of stories. We will do it for a single story. It is a subclass of a JUnit Test, and can be run in the IDE with normal JUnit test runners. Simply copy the `BasicDisplay.java` file to the appropriate place.
+3. Infrastructure files `CalcStory.java` and `StoryConfig.java` can also be copied over.
+4. We can install JBehave with the following POM snippet:
+```xml
+<dependency>
+  		<groupId>org.jbehave</groupId>
+  		<artifactId>jbehave-core</artifactId>
+  		<scope>test</scope>
+		<version>LATEST</version>
+</dependency>
+```
