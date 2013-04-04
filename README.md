@@ -54,5 +54,4 @@ public class CalculatorFixture {
 	}
 }
 ```
-
 9. On InitialState click Test, and our test is (or should be) green!
