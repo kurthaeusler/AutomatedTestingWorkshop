@@ -1,7 +1,5 @@
 package com.kurt.atw;
 
-import java.util.Stack;
-
 public class Operand extends StackItem {
 
 	private int _value;
@@ -19,11 +17,4 @@ public class Operand extends StackItem {
 
 		return _value;
 	}
-
-	@Override
-	public void doSomething(Stack<StackItem> _stack) {
-		// TODO Auto-generated method stub
-
-	}
-
 }

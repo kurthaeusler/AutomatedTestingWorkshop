@@ -18,8 +18,9 @@ public abstract class StackItem {
 
 	public abstract String displayValue() throws CalculatorException;
 
-	public abstract void doSomething(Stack<StackItem> _stack)
-			throws CalculatorException;
+	public void doSomething(Stack<StackItem> _stack) throws CalculatorException {
+		// Default is do nothing
+	}
 
 	public abstract int value() throws CalculatorException;
 }

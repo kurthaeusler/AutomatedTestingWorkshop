@@ -1,7 +1,5 @@
 package com.kurt.atw;
 
-import java.util.Stack;
-
 public abstract class Operator extends StackItem {
 
 	@Override
@@ -18,11 +16,4 @@ public abstract class Operator extends StackItem {
 	public int value() throws CalculatorException {
 		throw new CalculatorException();
 	}
-
-	@Override
-	public void doSomething(Stack<StackItem> _stack) throws CalculatorException {
-		// TODO Auto-generated method stub
-
-	}
-
 }
