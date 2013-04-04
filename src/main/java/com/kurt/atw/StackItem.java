@@ -2,10 +2,10 @@ package com.kurt.atw;
 
 import java.util.Stack;
 
-public class StackItem {
+public abstract class StackItem {
 
 	public static StackItem create(String buttonPush)
-			throws NotImplementedException {
+			throws CalculatorException {
 		if (buttonPush.length() == 1 && buttonPush.charAt(0) >= '0'
 				&& buttonPush.charAt(0) <= '9')
 			return new Operand(Integer.parseInt(buttonPush));
@@ -13,17 +13,13 @@ public class StackItem {
 			return new Plus();
 		if (buttonPush.equals("="))
 			return new Equals();
-		throw new NotImplementedException();
+		throw new CalculatorException();
 	}
 
-	public String displayValue() throws InvalidOperationException {
-		// TODO Auto-generated method stub
-		return null;
-	}
+	public abstract String displayValue() throws CalculatorException;
 
-	public void doSomething(Stack<StackItem> _stack)
-			throws NotImplementedException {
-		// TODO Auto-generated method stub
+	public abstract void doSomething(Stack<StackItem> _stack)
+			throws CalculatorException;
 
-	}
+	public abstract int value() throws CalculatorException;
 }

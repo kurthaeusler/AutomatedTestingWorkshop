@@ -6,8 +6,7 @@ import org.jbehave.core.annotations.Then;
 import org.jbehave.core.annotations.When;
 
 import com.kurt.atw.Calculator;
-import com.kurt.atw.InvalidOperationException;
-import com.kurt.atw.NotImplementedException;
+import com.kurt.atw.CalculatorException;
 import com.kurt.atw.StackItem;
 
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -38,7 +37,7 @@ public class CalcSteps {
 
 	@When("a <button push> occurs")
 	public void whenAbuttonPushOccurs(@Named("button push") String buttonPush)
-			throws InvalidOperationException, NotImplementedException {
+			throws CalculatorException {
 		_calculator.push(StackItem.create(buttonPush));
 	}
 

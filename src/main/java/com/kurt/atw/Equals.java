@@ -5,8 +5,7 @@ import java.util.Stack;
 public class Equals extends Operator {
 
 	@Override
-	public void doSomething(Stack<StackItem> stack)
-			throws NotImplementedException {
+	public void doSomething(Stack<StackItem> stack) throws CalculatorException {
 		Operator thisEqualsButton = (Equals) stack.pop();
 		assert (this == thisEqualsButton);
 		Operand secondOperand = (Operand) stack.pop();

@@ -1,8 +1,7 @@
 package com.kurt.atw.fixtures;
 
 import com.kurt.atw.Calculator;
-import com.kurt.atw.InvalidOperationException;
-import com.kurt.atw.NotImplementedException;
+import com.kurt.atw.CalculatorException;
 import com.kurt.atw.StackItem;
 
 public class CalculatorFixture {
@@ -17,8 +16,7 @@ public class CalculatorFixture {
 		return _calculator.displayShouldBe();
 	}
 
-	public void push(String button) throws InvalidOperationException,
-			NotImplementedException {
+	public void push(String button) throws CalculatorException {
 		_calculator.push(StackItem.create(button));
 	}
 

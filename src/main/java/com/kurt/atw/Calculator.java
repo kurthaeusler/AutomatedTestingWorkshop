@@ -16,8 +16,7 @@ public class Calculator {
 		return _display;
 	}
 
-	public void push(StackItem button) throws InvalidOperationException,
-			NotImplementedException {
+	public void push(StackItem button) throws CalculatorException {
 		_stack.push(button);
 		button.doSomething(_stack);
 		if (_stack.peek() instanceof Operand)
