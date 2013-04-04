@@ -16,11 +16,20 @@ public abstract class StackItem {
 		throw new CalculatorException();
 	}
 
-	public abstract String displayValue() throws CalculatorException;
-
 	public void doSomething(Stack<StackItem> _stack) throws CalculatorException {
 		// Default is do nothing
 	}
 
-	public abstract int value() throws CalculatorException;
+	public String displayValue() throws CalculatorException {
+		throw new CalculatorException();
+	}
+
+	public Operand apply(Operand firstOperand, Operand secondOperand)
+			throws CalculatorException {
+		throw new CalculatorException();
+	}
+
+	public int value() throws CalculatorException {
+		throw new CalculatorException();
+	}
 }
